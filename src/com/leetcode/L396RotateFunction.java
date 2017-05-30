@@ -21,7 +21,7 @@ public class L396RotateFunction {
 
     public static void main(String[] args) {
         int[] A = { 4, 3, 2, 6 };
-        Solution solution = new Exhaustion();
+        Solution solution = new ExhaustionReduceSpace();
         System.out.println(solution.maxRotateFunction(A));
     }
 
@@ -55,6 +55,30 @@ public class L396RotateFunction {
                 int fk = 0;
                 for (int j = 1; j < arrays[i].length; j++) {
                     fk += arrays[i][j] * j;
+                }
+                maxValue = maxValue > fk ? maxValue : fk;
+            }
+            return maxValue;
+        }
+
+    }
+
+    /**
+     * Reduce Space of {@link Exhaustion}}
+     */
+    public static class ExhaustionReduceSpace extends Exhaustion {
+
+        @Override
+        public int maxRotateFunction(int[] A) {
+            if (A == null || A.length == 0 || A.length == 1) {
+                return 0;
+            }
+            int maxValue = Integer.MIN_VALUE;
+            for (int i = 0; i < A.length; i++) {
+                int fk = 0;
+                for (int j = 1; j < A.length; j++) {
+                    int value = A[(i + j) % A.length];
+                    fk += value * j;
                 }
                 maxValue = maxValue > fk ? maxValue : fk;
             }
