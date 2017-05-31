@@ -2,7 +2,8 @@ package com.leetcode;
 
 /**
  * @author liyikun 2017/05/31
- * @see <a
+ * @see
+ *      <a
  *      href="https://leetcode.com/problems/reverse-string/#/description">344.
  *      Reverse String</a>
  * @description
