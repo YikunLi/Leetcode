@@ -21,7 +21,7 @@ public class L561ArrayPartitionI {
 
     public static void main(String[] args) {
         int[] array = { 1, 4, 3, 2 };
-        Solution solution = new MergeSort();
+        Solution solution = new Sort();
         System.out.println(solution.arrayPairSum(array));
     }
 
@@ -33,7 +33,7 @@ public class L561ArrayPartitionI {
     /**
      * 最终转化为将2n个数排序，找所有奇数位下标的数据之和算法
      */
-    public static class MergeSort implements Solution {
+    public static class Sort implements Solution {
 
         @Override
         public int arrayPairSum(int[] nums) {
