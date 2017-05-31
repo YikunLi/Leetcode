@@ -37,7 +37,7 @@ import java.util.List;
 public class L412FizzBuzz {
 
     public static void main(String[] args) {
-        Solution solution = new SolutionImpl();
+        Solution solution = new Traverse();
         System.out.println(solution.fizzBuzz(0));
     }
 
@@ -46,7 +46,7 @@ public class L412FizzBuzz {
         public List<String> fizzBuzz(int n);
     }
 
-    public static class SolutionImpl implements Solution {
+    public static class Traverse implements Solution {
 
         @Override
         public List<String> fizzBuzz(int n) {
