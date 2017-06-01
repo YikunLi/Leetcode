@@ -31,7 +31,7 @@ public class L520DetactCapital {
         Solution solution = new Traverse();
         System.out.println(solution.detectCapitalUse("USA"));
         System.out.println(solution.detectCapitalUse("FlaG"));
-        System.out.println(solution.detectCapitalUse("F"));
+        System.out.println(solution.detectCapitalUse("ggg"));
     }
 
     public static interface Solution {
@@ -42,8 +42,8 @@ public class L520DetactCapital {
     public static class Traverse implements Solution {
 
         private static final int RIGHT_ALL_CAPITALS = 0;
-        private static final int RIGHT_ALL_NOT_CAPITALS = 0;
-        private static final int RIGHT_FIRST_CAPITAL = 0;
+        private static final int RIGHT_ALL_NOT_CAPITALS = 1;
+        private static final int RIGHT_FIRST_CAPITAL = 2;
 
         @Override
         public boolean detectCapitalUse(String word) {
