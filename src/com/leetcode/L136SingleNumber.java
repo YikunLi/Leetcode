@@ -1,7 +1,7 @@
 package com.leetcode;
 
 /**
- * @author liyikun 2017/05/31
+ * @author liyikun 2017/06/01
  * @see
  *      <a href="https://leetcode.com/problems/single-number/#/description">136.
  *      Single Number</a>
